@@ -1,7 +1,7 @@
 body{
-padding:0px;
-margin:0px;
-background-color:rgb(245,245,245)	
+	padding:0px;
+	margin:0px;
+	background-color:rgb(245,245,245)	
 }
 hr{
 	height:1px;
@@ -11,17 +11,29 @@ hr{
 	padding:0px;
 	margin:0px;
 }
-p.navigation
+p.navigation-panel
 {
-background-color:rgb(248,248,248);	
-font-family:simsun;
-font-size:12px;
-color:#696969;
-padding-left:222px;
-padding-top:10px;
-padding-bottom:10px;
-margin:0px;
+	background-color:rgb(248,248,248);	
+	font-family:simsun;
+	font-size:12px;
+	color:#696969;
+	padding-left:222px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0px;
+	
+}
+a:link,a:visited
+{
+	color:#000000;
+	font-size:12px;
+	text-decoration:none;
 
+}
+a:hover,a:active
+{
+	color:rgb(206,38,122);
+	text-decoration:underline;
 }
 #logo
 {
@@ -30,7 +42,7 @@ margin:0px;
 	top:62px;
 	cursor:pointer;
 }
-#place{
+#location{
 	position:absolute;
 	margin-left:422px;
 	margin-top:40px;
@@ -40,13 +52,32 @@ margin:0px;
 	background-color:white;
 	
 }
+span.current-location{
+	color:rgb(51,51,51);
+	font-size:14px;
+	font-family:simsun;
+	font-weight:bold;
+	position:absolute;
+	padding-top:7px;
+	padding-left:10px;
+	cursor:pointer;
+}
+#pull-down-button{
+	float:right;
+	cursor:pointer;
+	background:url(./images/index-footer-button.png) no-repeat -236px -165px transparent;
+	height:16px;
+	width:17px;
+	margin-top:7px;
+	margin-right:7px;
+}
 div.search
 {
 	position:absolute;
 	margin-left:835px;
 	margin-top:40px;
 }
-button{
+button.search-button{
 	background-color:rgb(231,85,141);
 	width:64px;
 	height:41px;
@@ -58,37 +89,8 @@ button{
 	
 	
 }
-span.text{
-	color:rgb(51,51,51);
-	font-size:14px;
-	font-family:simsun;
-	font-weight:bold;
-	position:absolute;
-	padding-top:7px;
-	padding-left:10px;
-	cursor:pointer;
-}
-#buttonimage{
-	float:right;
-	cursor:pointer;
-	background:url(./images/index-footer-button.png) no-repeat -236px -165px transparent;
-	height:16px;
-	width:17px;
-	margin-top:7px;
-	margin-right:7px;
-}
-a:link,a:visited
-{
-color:#000000;
-font-size:12px;
-text-decoration:none;
 
-}
-a:hover,a:active
-{
-color:rgb(206,38,122);
-text-decoration:underline;
-}
+
 ul.list{
 	background-color:rgb(206,38,122);
 	list-style-type:none;
@@ -103,7 +105,7 @@ ul.list{
 li{
 	float:left;
 }
-a.one:link
+a.home-page:link
 {
 	display:block;
 	width:60px;
@@ -120,10 +122,10 @@ a.one:link
     border:0.1px inset rgb(216,51,128)
 
 }
-a.one:visited,a.two:active,a.two:hover{
-border:none;
+a.home-page:visited,a.home-page:active,a.home-page:hover{
+	border:none;
 }
-a.two:link
+a.option:link
 {
 	display:block;
 	width:65px;
@@ -137,12 +139,12 @@ a.two:link
 	padding:10px 20px;
 
 }
-a.two:visited,a.two:active,a.two:hover{
-background-color:rgb(213,47,123);
-border:0.1px inset rgb(216,51,128);
-color:white;
+a.option:visited,a.option:active,a.option:hover{
+	background-color:rgb(213,47,123);
+	border:0.1px inset rgb(216,51,128);
+	color:white;
 }
-a.three:link,a.three:visited
+a.direct-buy:link,a.direct-buy:visited
 {
 	display:block;
 	width:70px;
@@ -164,21 +166,62 @@ div.focus
 	margin-left:195px;
 	
 }
-#effect{
+#effect-left{
     float:left;
 	background:url(./images/video.png) no-repeat -307px -18px transparent;
 	height:325px;
 	width:27px;
 }
-#introduction
-{float:left;
+p.introduction
+{   float:left;
 	background:url(./images/video.png) no-repeat 0px 0px transparent;
 	height:302px;
 	width:290px;
+	margin:0px;
+	
+
 }
-#effect2{
+#film-name{
+	font-weight:500;
+	color:white;
+	font-size:25px; 
+	font-family:微软雅黑;
+	position:absolute;
+	padding-top:10px;
+	padding-left:40px;
+}
+#sex{
+	position:absolute;
+	padding-left:40px;
+	padding-top:60px;
+	padding-right:65px;
+	color:white;
+	font-size:13px;
+	font-family:simsun;
+	font-weight:300;
+	line-height:0.6cm;
+	white-space:normal;
+	
+}
+#effect-right{
 	float:left;
 	background:url(./images/video.png) no-repeat -334px -18px transparent;
 	height:325px;
 	width:27px;
+	
 }
+#choose-ticket{
+	background:url(./images/video.png) no-repeat 0px -307px transparent;
+	height:39px;
+	width:127px;
+	position:absolute;
+	margin-top:250px;
+	margin-left:80px;
+}
+#bottom-effect{
+	background:url(./images/video.png) no-repeat 0px -360px transparent;
+	width:375px;
+	height:28px;
+	
+}
+
