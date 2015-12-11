@@ -241,6 +241,7 @@ p.introduction
 	width:688px;
 	padding-top:15px;
 	padding-left:20px;
+	padding-bottom:25px;
 }
 #online{
 	padding-right:20px;
@@ -248,7 +249,7 @@ p.introduction
 	color:rgb(206,38,122);
 }
 #upcoming{
-	padding:15px 513px 15px 20px;
+	padding:15px 513px 10px 20px;
 	font-size:16px;
 	color:grb(51 51 51);
 	background:rgb(243,243,243) repeat;
@@ -264,6 +265,23 @@ p.introduction
 	height:21px;
 	color:white;
 	font-size:12px;
+	
+	
+}
+span.name{
+	
+	font-size:16px;
+	
+}
+div.buy{
+	height:30px;
+	width:125px;
+	background:url(./images/index-footer-button.png) no-repeat 0px -165px transparent;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:black;
+	font-size:11px;
+	padding:6px 15px 8px 12px;
 	
 	
 }
