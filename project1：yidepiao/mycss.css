@@ -86,60 +86,63 @@ button.search-button{
 
 ul.list{
 	width:363px;
-	height:55px;
-	background:url(./images/index-footer-button.png) repeat 0px -53px;
+	height:44px;
+	background:url(./images/index-footer-button.png) repeat 0px -55px;
 	list-style-type:none;
 	width:100%;
 	position:absolute;
 	margin-top:120px; 
 	overflow:hidden;
-	
+
 	
 }
 li.list{
-	display:inline;
+	float:left;
+	
 }
 a.home-page:link
 {
-	display:inline-block;
-	background:url(./images/index-footer-button.png) no-repeat 0px -108px;
+	display:block;
+	background:url(./images/index-footer-button.png) no-repeat 0px -109px;
 	width:120px;
-	height:44px;
+	height:43px;
 	font-size:16px;
 	color:white;
 	font-family:微软雅黑;
 	text-align:center;
 	text-decoration:none;
-	margin:0;
+	margin-left:222px;
+	padding-top:8px;
 }
 a.home-page:visited,a.home-page:active,a.home-page:hover{
 	border:none;
 }
 a.option:link
 {
-	display:inline-block;
-	background:url(./images/index-footer-button.png) no-repeat 0px -279px;
-	width:120px;
-	height:44px;
+	display:block;
+	background:url(./images/index-footer-button.png) no-repeat 0px -280px;
+	width:118px;
+	height:43px;
 	font-size:16px;
 	color:white;
 	font-family:微软雅黑;
 	text-align:center;
 	text-decoration:none;
-	margin:0;
+	padding-top:8px;
 }
 a.option:visited,a.option:active,a.option:hover{
-	background:url(./images/index-footer-button.png) repeat 0px -108px;
-	width:120px;
-	height:44px;
+	background:url(./images/index-footer-button.png) repeat -116px -109px;
+	width:118px;
+	height:43px;
 }
 a.direct-buy:link,a.direct-buy:visited
 {
-	display:inline-block;
-	background:url(./images/index-footer-button.png) repeat -235px -108px;
+	display:block;
+	background:url(./images/index-footer-button.png) repeat -235px -109px;
 	width:115px;
 	height:44px;
-	margin-left:302px;
+	margin-left:275px;
+	
 }
 .focus
 {
@@ -217,7 +220,7 @@ p.introduction
     position:absolute;
 	margin-left:222px;
 	margin-top:490px;
-	border:0.5px solid silver;
+	border:0.5px solid rgb(225,225,225);
 	background-color:white;
 	height:635px;
 	width:668px;
@@ -351,24 +354,27 @@ a.ranking{
 	position:absolute;
 	margin-top:1160px;
 	margin-left:222px;
-	width:960px;
-	height:340px;
+	width:945px;
+	height:335px;
 	border:1px solid rgb(225,225,225);
-	padding-left:10px;
+	padding-left:15px;
 	padding-top:13px;
-	padding-right:10px;
+	padding-right:20px;
 }
 #more-event{
 	background:url(./images/indexto.png) no-repeat 0px -50px ;
-	width:62px;
+	width:60px;
 	height:21px;
 	color:white;
 	font-size:12px;
-	margin-left:785px;
+	text-align:center;
+	float:right;
 }
 .event-box{
-	margin-top:10px;
-	margin-right:14px;
+	padding-top:10px;
+	padding-right:6px;
+	padding-left:2px;
+	margin:0;
 	float:left;
 }
 .event-name{
@@ -390,5 +396,117 @@ a.ranking{
 	color:white;
 	font-size:14px;
 	margin-top:12px;
+	padding-top:5px;
 	
+}
+.cinema{
+	position:absolute;
+	margin-top:1520px;
+	margin-left:222px;
+	width:945px;
+	height:300px;
+	border:1px solid rgb(225,225,225);
+	padding-left:15px;
+	padding-top:23px;
+	padding-right:20px;
+}
+.cinema-box{
+	padding-top:10px;
+	padding-right:11px;
+	padding-left:0px;
+	margin:0;
+	float:left;
+}
+.cinema-logo{
+	border:1px solid rgb(225,225,225);
+	border-bottom:none;
+	width:222px;
+	height:177px;
+	margin:0;
+	padding:0;
+}
+#more-film{
+	background:url(./images/indexto.png) no-repeat 0px -50px ;
+	width:60px;
+	height:21px;
+	color:white;
+	font-size:12px;
+	text-align:center;
+	float:right;
+}
+.cinema-name{
+	background-color:rgb(159,203,87);
+	width:215px;
+	height:30px;
+	border:none;
+	color:white;
+	font-size:14px;
+	font-weight:600;
+	padding-left:10px;
+	padding-top:10px;
+	margin:0;
+}
+
+.link{
+	position:absolute;
+	margin-top:1855px;
+	margin-left:222px;
+	border:1px solid rgb(225,225,225);
+	color:gray;
+	font-size:12px;
+	padding-left:15px;
+	padding-top:15px;
+	width:966px;
+	height:35px;
+}
+.footer1{
+	position:absolute;
+	margin-top:1920px;
+	border-top:1px solid rgb(225,225,225);
+	border-bottom:1px solid rgb(225,225,225);
+	width:1201px;
+	height:170px;
+	padding-left:222px;
+	padding-top:33px;
+	padding-right:0px;
+	margin-right:0;
+}
+.section{
+	float:left;
+	border-left:0.5px solid rgb(225,225,225);
+	width:197px;
+	height:135px;
+}
+ul.section{
+	padding-top:38px;
+	list-style-type:none;
+	padding-left:20px;
+	font-size:12px;
+	color:rgb(102,102,102);
+	border:none;
+	margin:0;
+}
+li{ 
+	
+	padding-bottom:7px;
+}
+
+#header1{
+	position:absolute;
+	margin-left:20px;
+	margin-top:0px;
+	background:url(./images/index-footer-button.png) no-repeat -7px -246px ;
+	height:28px;
+	width:29px;
+}
+span.heading{
+	color:rgb(223,72,150);
+	font-size:18px;
+	position:absolute;
+	margin-top:0px;
+	margin-left:50px;
+}
+.footer2{
+	position:absolute;
+	margin-top:2120px;
 }
