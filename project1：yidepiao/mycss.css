@@ -192,13 +192,16 @@ a.direct-buy:link,a.direct-buy:visited
 	
 }
 #bottom-effect{
+	/*img标签不要使用background属性*/
+	/*可以使用span*/
 	background:url(./images/video.png) repeat 0px -359px transparent;
 	width:980px;
 	height:26px;
 	clear:both;
 	position:relative;
-	top:20px;
+	bottom:45px;
 	left:21px;
+	display:block;/*由于inline元素没有内容默认的width为0，所以要设置其block*/
 }
 .introduction
 {   float:left;
