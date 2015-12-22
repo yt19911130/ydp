@@ -195,8 +195,10 @@ a.direct-buy:link,a.direct-buy:visited
 	background:url(./images/video.png) repeat 0px -359px transparent;
 	width:980px;
 	height:26px;
-	margin:10px;
 	clear:both;
+	position:relative;
+	top:20px;
+	left:21px;
 }
 .introduction
 {   float:left;
@@ -231,12 +233,13 @@ a.direct-buy:link,a.direct-buy:visited
 	
 }
 
-a.choose-ticket{
-	height:38px;
-	width:126px;
+#choose-ticket{
+	height:37px;
+	width:125px;
 	background:url(./images/video.png) no-repeat 0px -306px;
-	padding-top:10px;
-	padding-left:0px;
+	margin-top:20px;
+	margin-left:80px;
+	border:0;
 }
 
 #film-section{
