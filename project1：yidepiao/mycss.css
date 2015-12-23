@@ -169,8 +169,8 @@ a.direct-buy:link,a.direct-buy:visited
 	
 }
 .hot{
-	margin:8px auto;
-	height:350px;
+	margin:8px auto 6px auto;
+	height:320px;
 
 	}
 
@@ -245,18 +245,20 @@ a.direct-buy:link,a.direct-buy:visited
 	border:0;
 }
 
-#film-section{
+.film-section{
 	
-    position:absolute;
-	margin-left:222px;
-	margin-top:490px;
 	border:0.5px solid rgb(225,225,225);
 	background-color:white;
-	height:635px;
+	height:645px;
 	width:668px;
-	padding-top:15px;
 	padding-left:20px;
 	padding-bottom:7px;
+	padding-top:0px;
+	margin-left:21px;
+	margin-top:0px;
+}
+#line{
+	display:inline;
 }
 #online{
 	padding-right:20px;
@@ -264,7 +266,7 @@ a.direct-buy:link,a.direct-buy:visited
 	color:rgb(206,38,122);
 }
 #upcoming{
-	padding:15px 493px 10px 20px;
+	padding:16px 494px 10px 20px;
 	font-size:16px;
 	color:grb(51 51 51);
 	background:rgb(243,243,243) repeat;
@@ -272,15 +274,30 @@ a.direct-buy:link,a.direct-buy:visited
 	border-bottom:0.5px solid silver;
 	
 }
-#morefilm{
-	position:absolute;
-	padding:17px 15px 14px 521px ;
+#more-film{
+	
 	background:url(./images/indexto.png) no-repeat 0px -50px transparent;
 	width:62px;
 	height:21px;
 	color:white;
 	font-size:12px;
+	float:right;
+	position:relative;
+	z-index:1;
+	top:-20px;
+	right:20px;
 	
+}
+.box{
+	margin-top:25px;
+	width:151px;
+	margin-right:16px;
+	float:left;
+}
+.box2{
+	margin-top:4px;
+	margin-right:15px;
+	float:left;
 	
 }
 .buy{
@@ -297,41 +314,34 @@ a.direct-buy:link,a.direct-buy:visited
 	line-height:6px;
 	text-align:center;
 }
-.box{
-	margin-top:28px;
-	width:151px;
-	margin-right:16px;
-	float:left;
-}
-.box2{
-	margin-top:5px;
-	margin-right:15px;
-	float:left;
-	
-}
+
+
 img.film{
 	height:203px;
 	width:145px;
 }
 .sidebar{
-	position:absolute;
-	margin-top:490px;
-	margin-left:927px;
+	float:right;
+	position:relative;
+	top:-654px;
+	right:20px;
+	width:274px;
+}
+.login{
 	color:rgb(206,38,122);
 	font-size:24px;
 	font-weight:500;
 	background:url(./images/wx.png) no-repeat 0px 0px ;
 	width:274px;
-	height:84px;
-	padding-top:22px;
+	height:74px;
+	padding-top:20px;
+	padding-bottom:0px;
 }
-.surrounding{
-	position:absolute;
-	margin-top:580px;
-	margin-left:927px;
+.weibo-surrounding{
+	margin-top:0px;
 	background-color:white;
 	border:1px solid rgb(225,225,225);
-	padding:7px;
+	padding:7px 5px 7px 7px;
 }
 .weibo{
 	background:url(./images/wx.png) no-repeat 0px -104px ;
@@ -340,10 +350,8 @@ img.film{
 	border:none;
 	
 }
-.surrounding2{
-	position:absolute;
-	margin-top:677px;
-	margin-left:927px;
+.weixin-surrounding{
+	margin-top:6px;
 	background-color:white;
 	border:1px solid rgb(225,225,225);
 	padding:7px;
@@ -355,12 +363,10 @@ img.film{
 	border:none;
 }
 .rankinglist{
-	position:absolute;
-	margin-top:865px;
-	margin-left:927px;
+	
 	border:1px solid rgb(225,225,225);
-	width:275px;
-	height:281px;
+	margin-top:8px;
+	height:278px;
 	
 }
 ol.ranking{
@@ -381,15 +387,14 @@ a.ranking{
 	
 }
 .event{
-	position:absolute;
-	margin-top:1160px;
-	margin-left:222px;
-	width:945px;
+	width:950px;
 	height:335px;
 	border:1px solid rgb(225,225,225);
 	padding-left:15px;
 	padding-top:13px;
-	padding-right:20px;
+	padding-right:15px;
+	margin-left:21px;
+	margin-top:10px;
 }
 #more-event{
 	background:url(./images/indexto.png) no-repeat 0px -50px ;
@@ -399,13 +404,27 @@ a.ranking{
 	font-size:12px;
 	text-align:center;
 	float:right;
+	position:relative;
+	right:-234px;
 }
 .event-box{
 	padding-top:10px;
-	padding-right:6px;
-	padding-left:2px;
+	padding-right:10px;
+	padding-left:0px;
 	margin:0;
 	float:left;
+
+}
+.event-box2{
+	padding-top:10px;
+	padding-right:0px;
+	padding-left:0px;
+	margin:0;
+	float:right;
+	position:relative;
+	top:-275px;
+	left:239px;
+
 }
 .event-name{
 	font-size:16px;
@@ -430,15 +449,25 @@ a.ranking{
 	
 }
 .cinema{
-	position:absolute;
-	margin-top:1520px;
-	margin-left:222px;
-	width:945px;
+	width:950px;
 	height:300px;
 	border:1px solid rgb(225,225,225);
 	padding-left:15px;
-	padding-top:23px;
-	padding-right:20px;
+	padding-top:13px;
+	padding-right:15px;
+	margin-left:21px;
+	margin-top:10px;
+}
+#more-cinema{
+	background:url(./images/indexto.png) no-repeat 0px -50px ;
+	width:60px;
+	height:21px;
+	color:white;
+	font-size:12px;
+	text-align:center;
+	float:right;
+	position:relative;
+	right:-543px;
 }
 .cinema-box{
 	padding-top:10px;
@@ -446,7 +475,28 @@ a.ranking{
 	padding-left:0px;
 	margin:0;
 	float:left;
+	
 }
+.cinema-box2{
+	padding-top:10px;
+	padding-right:11px;
+	padding-left:0px;
+	margin:0;
+	float:left;
+	position:relative;
+	top:-189px;
+	
+}.cinema-box3{
+	padding-top:10px;
+	padding-right:11px;
+	padding-left:0px;
+	margin:0;
+	float:left;
+	position:relative;
+	top:-230px;
+	
+}
+
 .cinema-logo{
 	border:1px solid rgb(225,225,225);
 	border-bottom:none;
@@ -455,15 +505,7 @@ a.ranking{
 	margin:0;
 	padding:0;
 }
-#more-film{
-	background:url(./images/indexto.png) no-repeat 0px -50px ;
-	width:60px;
-	height:21px;
-	color:white;
-	font-size:12px;
-	text-align:center;
-	float:right;
-}
+
 .cinema-name{
 	background-color:rgb(159,203,87);
 	width:215px;
@@ -478,9 +520,7 @@ a.ranking{
 }
 
 .link{
-	position:absolute;
-	margin-top:1855px;
-	margin-left:222px;
+	
 	border:1px solid rgb(225,225,225);
 	color:gray;
 	font-size:12px;
@@ -488,18 +528,22 @@ a.ranking{
 	padding-top:15px;
 	width:966px;
 	height:35px;
+	margin-top:10px;
+	margin-left:21px;
+	font-family:微软雅黑;
+	display:block;
 }
 .footer1{
-	position:absolute;
-	margin-top:1920px;
+	
 	border-top:1px solid rgb(225,225,225);
 	border-bottom:1px solid rgb(225,225,225);
-	width:1201px;
+	width:985px;
 	height:170px;
-	padding-left:222px;
 	padding-top:33px;
 	padding-right:0px;
-	margin-right:0;
+	margin-left:21px;
+	margin-top:10px;
+	background:white;
 }
 .section{
 	float:left;
@@ -522,9 +566,7 @@ li{
 }
 
 #header1{
-	position:absolute;
-	margin-left:20px;
-	margin-top:0px;
+	display:inline-block;
 	background:url(./images/index-footer-button.png) no-repeat -7px -246px ;
 	height:28px;
 	width:29px;
@@ -537,6 +579,6 @@ span.heading{
 	margin-left:50px;
 }
 .footer2{
-	position:absolute;
-	margin-top:2120px;
+	
+	text-align:center;
 }

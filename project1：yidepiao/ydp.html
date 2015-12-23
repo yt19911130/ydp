@@ -36,7 +36,7 @@
 				</ul>
 			</div>
 			<div class="hot">
-				<img id="effect-left">
+				<span id="effect-left"></span>
 				<img src="ydp_files/live-in-marz.jpg" style="float:left;">
 				<div class="introduction">
 					<span id="film-name">火星救援</span>
@@ -45,12 +45,15 @@
 					</p>
 					<button id="choose-ticket"></button>
 				</div>
-				<img id="effect-right"><br/>
+				<span id="effect-right"></span><br/>
 				<span id="bottom-effect"></span>
 			</div>
-			<div id="film-section">
-				<span id="online">正在热映</span>
-				<span id="upcoming">即将上映</span>
+			<div class="film-section">
+				<div class="line">
+					<span id="online">正在热映</span>
+					<span id="upcoming">即将上映</span>
+					<span id="more-film">更多电影</span> 
+				</div>
 				<div class="box">
 					<img class="film" src="ydp_files/film1.jpg">
 					<div class="text">
@@ -78,7 +81,7 @@
 						<span style="color:rgb(206,38,122);font-size:11px;padding-right:5px;">33元</span><span style="color:black;">起</span><span style="color:white;padding-left:37px;">选座购票</span>
 					</div>
 				</div>
-				<div class="box">
+				<div class="box2">
 					<img class="film" src="ydp_files/film4.jpg">
 					<div class="text">
 						<p>怦然星动</p>
@@ -125,30 +128,31 @@
 				</div>
 			</div>
 			<div class="sidebar">
-				<span style="padding-left:22px;">立即注册</span><span style="padding-left:28px;">登录易得票</span>
-			</div>
-			<div class="surrounding">
-			<div class="weibo"></div>
+				<div class="login">
+					<span style="padding-left:22px;">立即注册</span>
+					<span style="padding-left:20px;">登录易得票</span>
+				</div>
+				<div class="weibo-surrounding">
+					<div class="weibo"></div>
+				</div>
+				<div class="weixin-surrounding">
+					<div class="weixin"></div>
+				</div>
+				<div class="rankinglist">
+					<p style="font-size:16px;border-bottom:1px solid rgb(225,225,225);color:rgb(153,153,153);font-weight:500;width:246px;height:30px;padding-left:30px;padding-top:5px;margin-top:15px;margin-bottom:0px;">
+					热映排行榜
+					</p>
+					<ol class="ranking">
+						<li class="ranking"><a class="ranking">师父</a></li>
+						<li class="ranking"><a class="ranking">万万没想到</a></li>
+						<li class="ranking"><a class="ranking">极速风流</a></li>
+						<li class="ranking"><a class="ranking">极盗者</a></li>
+						<li class="ranking"><a class="ranking">寻龙诀</a></li>
+						<li class="ranking"><a class="ranking">火星救援</a></li>
+					</ol>
+				</div>
 			</div>
 			
-		
-			<div class="surrounding2">
-				<div class="weixin"></div>
-			</div>
-			
-			<div class="rankinglist">
-				<p style="font-size:16px;border-bottom:1px solid rgb(225,225,225);color:rgb(153,153,153);font-weight:500;width:246px;height:30px;padding-left:30px;padding-top:5px;margin-top:15px;margin-bottom:0px;">
-				热映排行榜
-				</p>
-				<ol class="ranking">
-					<li class="ranking"><a class="ranking">师父</a></li>
-					<li class="ranking"><a class="ranking">万万没想到</a></li>
-					<li class="ranking"><a class="ranking">极速风流</a></li>
-					<li class="ranking"><a class="ranking">极盗者</a></li>
-					<li class="ranking"><a class="ranking">寻龙诀</a></li>
-					<li class="ranking"><a class="ranking">火星救援</a></li>
-				</ol>
-			</div>
 			<div class="event">
 				<div style="border-bottom:2px solid silver;padding-bottom:10px;padding-right:0px;">
 					<span style="font-size:18px;font-weight:600;color:rgb(51,51,51);">长沙热门活动</span>
@@ -178,7 +182,7 @@
 						<a style="padding-top:7px;padding-left:16px;">查看详情</a>
 					</div>
 				</div>
-				<div class="event-box">
+				<div class="event-box2">
 					<img src="ydp_files/event3.jpg">
 					<div class="event-name">
 						<span>盛夏观影季，1000天翼积分抢看小时代</span>
@@ -191,11 +195,11 @@
 					</div>
 				</div>
 			</div>
+			
 			<div class="cinema">
 				<div style="border-bottom:2px solid silver;padding-bottom:10px;padding-right:0px;">
 					<span style="font-size:18px;font-weight:600;color:rgb(51,51,51);">长沙热门影院</span>
-					<span id="more-film">更多影院</span>
-			
+					<span id="more-cinema">更多影院</span>
 				</div>
 				<div class="cinema-box">
 					<img class="cinema-logo" src="./images/cinema1.jpg">
@@ -203,19 +207,19 @@
 					湖南大剧院
 					</div>     
 				</div>
-				<div class="cinema-box">
+				<div class="cinema-box2">
 					<img class="cinema-logo" src="./images/cinema2.png">
 					<div class="cinema-name">
 					长沙沃美影城
 					</div>     
 				</div>
-				<div class="cinema-box">
+				<div class="cinema-box2">
 					<img class="cinema-logo" src="./images/cinema3.jpg">
 					<div class="cinema-name">
 					芒果东风影城
 					</div>     
 				</div>
-				<div class="cinema-box">
+				<div class="cinema-box3">
 					<img class="cinema-logo" src="./images/cinema4.png">
 					<div class="cinema-name">
 					潇湘国际影城留洋店
@@ -223,12 +227,12 @@
 				</div>
 			</div>
 			<div class="link">
-					<span>友情链接：</span>
+				<p>友情链接：</p>
 			</div>
 			<div class="footer1">
 				<div class="section">
 					<div>
-						<img id="header1">
+						<span id="header1"></span>
 						<span class="heading">新手上路</span>
 					</div>	
 					<ul class="section">
@@ -241,7 +245,7 @@
 				</div>
 				<div class="section">
 					<div>	
-						<img id="header1">
+						<span id="header1"></span>
 						<span class="heading">购票指南</span>
 					</div>	
 					<ul class="section">
@@ -285,7 +289,7 @@
 			
 			</div>
 			<div class="footer2">
-			<p style="text-align:center;font-size:12px;white-space:pre;line-height:23px;padding-left:350px;">
+			<p style="font-size:12px;white-space:pre;line-height:23px;padding-left:350px;">
 			Copyright©2012-2015 yidepiao.com All rights reserved. 易得票(yidepiao.com) 版权所有 | 湘ICP备11018884号
 			增值电信业务经营许可证:湘B2-20130057 
 			</p>
