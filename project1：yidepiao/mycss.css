@@ -4,14 +4,13 @@ html,body{
 	height:100%;
 	width:100%;
 	background-color:rgb(245,245,245);	
-	
 }
 .container
 {
-	width: 1022px;
+	width: 10padding-left:10px;22px;
 	height: 100%;
 	margin: 0 auto;	
-	
+	width:1100px;
 }
 			
 .nav{
@@ -261,6 +260,7 @@ a.direct-buy:link,a.direct-buy:visited
 	padding-top:0px;
 	margin-left:21px;
 	margin-top:0px;
+	float:left;
 	
 }
 #line{
@@ -335,10 +335,7 @@ img.film{
 	width:145px;
 }
 .sidebar{
-	float:right;
-	position:relative;
-	top:-654px;
-	right:20px;
+	float:left;
 	width:274px;
 }
 .login{
@@ -402,7 +399,7 @@ a.ranking{
 	
 }
 .event{
-	width:945px;
+	width:100%;
 	height:335px;
 	border:1px solid rgb(225,225,225);
 	padding-left:15px;
@@ -429,19 +426,9 @@ a.ranking{
 	padding-left:0px;
 	margin:0;
 	float:left;
-
+	width:300px;
 }
-.event-box2{
-	padding-top:10px;
-	padding-right:0px;
-	padding-left:0px;
-	margin:0;
-	float:right;
-	position:relative;
-	top:-275px;
-	left:234px;
 
-}
 .event-name{
 	font-size:16px;
 	line-height:30px;
@@ -466,7 +453,7 @@ a.ranking{
 	
 }
 .cinema{
-	width:950px;
+	width:100%;
 	height:300px;
 	border:1px solid rgb(225,225,225);
 	padding-left:15px;
@@ -477,14 +464,7 @@ a.ranking{
 	background-color:white;
 	
 }
-ul.cinema{
-	list-style-type:none;
-	margin:0;
-	padding:0;
-}
-li.cinema{
-	display:inline;
-}
+
 #more-cinema{
 	background:url(./images/indexto.png) no-repeat 0px -50px ;
 	width:60px;
@@ -497,48 +477,19 @@ li.cinema{
 	right:-543px;
 }
 .cinema-box{
-	padding-top:10px;
-	padding-right:18px;
-	padding-left:0px;
+	margin-top:10px;
+	margin-right:18px;
+	margin-left:0px;
 	float:left;
-	display:inline;
+	width:222px;
+	height:222px;
 }
-.cinema-box2{
-	padding-top:10px;
-	padding-right:18px;
-	padding-left:0px;
-	margin:0;
-	float:left;
-	position:relative;
-	top:-189px;
-	
-}
-.cinema-box3{
-	padding-top:10px;
-	padding-right:18px;
-	padding-left:0px;
-	margin:0;
-	float:left;
-	position:relative;
-	top:-228px;
-	
-}
-.cinema-box4{
-	padding-top:10px;
-	padding-right:18px;
-	padding-left:0px;
-	margin:0;
-	float:left;
-	position:relative;
-	top:-430px;
-	left:600px;
-	
-}
+
 
 .cinema-logo{
 	border:1px solid rgb(225,225,225);
 	border-bottom:none;
-	width:222px;
+	width:100%;
 	height:177px;
 	margin:0;
 	padding:0;
@@ -546,14 +497,15 @@ li.cinema{
 
 .cinema-name{
 	background-color:rgb(159,203,87);
-	width:215px;
+	width:100%;
 	height:30px;
 	border:none;
 	color:white;
 	font-size:14px;
 	font-weight:600;
 	padding-left:10px;
-	padding-top:10px;
+	padding-right:10px;
+	padding-top:0;
 	margin:0;
 }
 
@@ -586,23 +538,11 @@ li.cinema{
 .section{
 	float:left;
 	border-left:0.5px solid rgb(225,225,225);
-	width:197px;
 	height:135px;
-	position:relative;
-	top:-100px;
-	left:-74px;
+	margin:20px;
 	display:inline-block;
 }
-.section2{
-	float:left;
-	border-left:0.5px solid rgb(225,225,225);
-	width:197px;
-	height:135px;
-	position:relative;
-	top:-233px;
-	left:780px;
-	
-}
+
 ul.column{
 	padding-top:0px;
 	list-style-type:none;
@@ -633,13 +573,12 @@ span.heading{
 	top:-10px;
 }
 .copyright{
+	clear:both;
 	margin:0;
 	padding:0;
 	font-size:12px;
 	white-space:pre;
 	text-align:center;
-	position:relative;
-	right:780px;
 	margin:0;
 	color:grb(51,51,51);
 	line-height:23px;
