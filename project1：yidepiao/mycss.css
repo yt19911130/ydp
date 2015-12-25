@@ -297,6 +297,7 @@ a.direct-buy:link,a.direct-buy:visited
 	top:-20px;
 	right:20px;
 	text-align:center;
+	padding-top:1.5px;
 	
 }
 .box{
@@ -419,6 +420,7 @@ a.ranking{
 	font-size:12px;
 	text-align:center;
 	float:right;
+	padding-top:1.5px;
 
 }
 .event-box{
@@ -474,7 +476,7 @@ a.ranking{
 	font-size:12px;
 	text-align:center;
 	float:right;
-
+	padding-top:1.5px;
 }
 .cinema-box{
 	margin-top:10px;
@@ -505,7 +507,7 @@ a.ranking{
 	font-weight:600;
 	padding-left:10px;
 	padding-right:10px;
-	padding-top:0;
+	padding-top:15px;
 	margin:0;
 }
 
