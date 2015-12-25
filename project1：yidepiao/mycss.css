@@ -99,8 +99,8 @@ span.current-location{
 {	
 	margin:44px auto 15px 330px;
 	background:url(./images/index-footer-button.png) no-repeat 0 0 transparent;
-	height:43px;
-	width:363px;
+	height:41px;
+	width:361px;
 	float:left;
 }
 
@@ -251,10 +251,10 @@ a.direct-buy:link,a.direct-buy:visited
 
 .film-section{
 	
-	border:0.5px solid rgb(225,225,225);
+	border:1px solid rgb(225,225,225);
 	background-color:white;
-	height:630px;
-	width:668px;
+	height:643px;
+	width:675px;
 	padding-left:20px;
 	padding-bottom:7px;
 	padding-top:18px;
@@ -262,12 +262,14 @@ a.direct-buy:link,a.direct-buy:visited
 	margin-top:0px;
 	float:left;
 	margin-bottom:10px;
+	
 }
 #line{
 	display:inline;
+	
 }
 #online{
-	padding-right:20px;
+	padding:0px 20px 20px 0px;
 	font-size:16px;
 	color:rgb(206,38,122);
 	font-family:微软雅黑;
@@ -278,8 +280,8 @@ a.direct-buy:link,a.direct-buy:visited
 	font-size:16px;
 	color:grb(51 51 51);
 	background:rgb(243,243,243) repeat;
-	border-left:0.5px solid silver;
-	border-bottom:0.5px solid silver;
+	border-left:1px solid silver;
+	border-bottom:1px solid silver;
 	font-family:微软雅黑;
 	font-weight:400;
 	
@@ -291,24 +293,18 @@ a.direct-buy:link,a.direct-buy:visited
 	height:21px;
 	color:white;
 	font-size:12px;
-	float:right;
-	position:relative;
-	z-index:1;
-	top:-20px;
-	right:20px;
 	text-align:center;
-	padding-top:1.5px;
+	padding:3px;
+	position:relative;
+	top:-25px;
+	left:598px;
+	z-index:1;
 	
 }
 .box{
-	margin-top:25px;
+	margin-top:10px;
 	width:151px;
 	margin-right:16px;
-	float:left;
-}
-.box2{
-	margin-top:4px;
-	margin-right:15px;
 	float:left;
 	
 }
@@ -332,8 +328,8 @@ a.direct-buy:link,a.direct-buy:visited
 
 
 img.film{
-	height:203px;
-	width:145px;
+	height:205px;
+	width:151px;
 }
 .sidebar{
 	float:left;
@@ -349,10 +345,10 @@ img.film{
 	height:74px;
 	text-align:center;
 	font-family:微软雅黑;
-	padding-top:14px;
+	padding-top:15px;
 }
 .weibo-surrounding{
-	margin-top:2px;
+	margin-top:7px;
 	background-color:white;
 	border:1px solid rgb(225,225,225);
 	padding:10px 3px 7px 7px;
@@ -366,7 +362,7 @@ img.film{
 	
 }
 .weixin-surrounding{
-	margin-top:8px;
+	margin-top:12px;
 	background-color:white;
 	border:1px solid rgb(225,225,225);
 	padding:7px 5px 7px 5px;
@@ -381,7 +377,7 @@ img.film{
 .rankinglist{
 	
 	border:1px solid rgb(225,225,225);
-	margin-top:10px;
+	margin-top:12px;
 	height:278px;
 	
 }
@@ -420,7 +416,7 @@ a.ranking{
 	font-size:12px;
 	text-align:center;
 	float:right;
-	padding-top:1.5px;
+	padding:3px 0 3px 0px;
 
 }
 .event-box{
@@ -476,7 +472,7 @@ a.ranking{
 	font-size:12px;
 	text-align:center;
 	float:right;
-	padding-top:1.5px;
+	padding:3px 0 3px 0px;
 }
 .cinema-box{
 	margin-top:10px;
@@ -524,6 +520,7 @@ a.ranking{
 	margin-left:21px;
 	font-family:微软雅黑;
 	display:block;
+	background:white;
 }
 
 .footer{
