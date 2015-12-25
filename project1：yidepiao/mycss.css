@@ -7,10 +7,10 @@ html,body{
 }
 .container
 {
-	width: 10padding-left:10px;22px;
+	
 	height: 100%;
 	margin: 0 auto;	
-	width:1100px;
+	width:1025px;
 }
 			
 .nav{
@@ -253,15 +253,15 @@ a.direct-buy:link,a.direct-buy:visited
 	
 	border:0.5px solid rgb(225,225,225);
 	background-color:white;
-	height:645px;
+	height:630px;
 	width:668px;
 	padding-left:20px;
 	padding-bottom:7px;
-	padding-top:0px;
+	padding-top:18px;
 	margin-left:21px;
 	margin-top:0px;
 	float:left;
-	
+	margin-bottom:10px;
 }
 #line{
 	display:inline;
@@ -336,7 +336,8 @@ img.film{
 }
 .sidebar{
 	float:left;
-	width:274px;
+	width:278px;
+	margin-left:18px;
 }
 .login{
 	color:rgb(206,38,122);
@@ -347,17 +348,18 @@ img.film{
 	height:74px;
 	text-align:center;
 	font-family:微软雅黑;
-	padding-top:15px;
+	padding-top:14px;
 }
 .weibo-surrounding{
-	margin-top:0px;
+	margin-top:2px;
 	background-color:white;
 	border:1px solid rgb(225,225,225);
-	padding:9px 5px 7px 7px;
+	padding:10px 3px 7px 7px;
+	width:262px;
 }
 .weibo{
 	background:url(./images/wx.png) no-repeat 0px -104px ;
-	width:260px;
+	width:258px;
 	height:71px;
 	border:none;
 	
@@ -366,18 +368,19 @@ img.film{
 	margin-top:8px;
 	background-color:white;
 	border:1px solid rgb(225,225,225);
-	padding:7px;
+	padding:7px 5px 7px 5px;
+	width:262px;
 }
 .weixin{
 	background:url(./images/wx.png) no-repeat 0px -195px ;
-	width:260px;
+	width:258px;
 	height:162px;
 	border:none;
 }
 .rankinglist{
 	
 	border:1px solid rgb(225,225,225);
-	margin-top:8px;
+	margin-top:10px;
 	height:278px;
 	
 }
@@ -399,14 +402,13 @@ a.ranking{
 	
 }
 .event{
-	width:100%;
+	width:950px;
 	height:335px;
 	border:1px solid rgb(225,225,225);
 	padding-left:15px;
 	padding-top:13px;
 	padding-right:20px;
 	margin-left:21px;
-	margin-top:10px;
 	background-color:white;
 }
 #more-event{
@@ -417,16 +419,15 @@ a.ranking{
 	font-size:12px;
 	text-align:center;
 	float:right;
-	position:relative;
-	right:-234px;
+
 }
 .event-box{
 	padding-top:10px;
-	padding-right:14px;
+	padding-right:8px;
 	padding-left:0px;
 	margin:0;
 	float:left;
-	width:300px;
+	width:308px;
 }
 
 .event-name{
@@ -453,12 +454,12 @@ a.ranking{
 	
 }
 .cinema{
-	width:100%;
+	width:950px;
 	height:300px;
 	border:1px solid rgb(225,225,225);
 	padding-left:15px;
 	padding-top:13px;
-	padding-right:15px;
+	padding-right:20px;
 	margin-left:21px;
 	margin-top:10px;
 	background-color:white;
@@ -473,12 +474,11 @@ a.ranking{
 	font-size:12px;
 	text-align:center;
 	float:right;
-	position:relative;
-	right:-543px;
+
 }
 .cinema-box{
 	margin-top:10px;
-	margin-right:18px;
+	margin-right:15px;
 	margin-left:0px;
 	float:left;
 	width:222px;
@@ -497,7 +497,7 @@ a.ranking{
 
 .cinema-name{
 	background-color:rgb(159,203,87);
-	width:100%;
+	width:205px;
 	height:30px;
 	border:none;
 	color:white;
@@ -515,19 +515,20 @@ a.ranking{
 	color:gray;
 	font-size:12px;
 	padding-left:15px;
-	padding-top:15px;
-	width:966px;
-	height:35px;
+	padding-top:0px;
+	width:970px;
+	height:40px;
 	margin-top:10px;
 	margin-left:21px;
 	font-family:微软雅黑;
 	display:block;
 }
+
 .footer{
 	border-top:1px solid rgb(225,225,225);
 	border-bottom:1px solid rgb(225,225,225);
 	width:985px;
-	height:170px;
+	height:180px;
 	padding-top:10px;
 	padding-right:0px;
 	margin-left:21px;
@@ -539,7 +540,7 @@ a.ranking{
 	float:left;
 	border-left:0.5px solid rgb(225,225,225);
 	height:135px;
-	margin:20px;
+	margin:20px 55px 20px 0px;
 	display:inline-block;
 }
 
@@ -574,13 +575,10 @@ span.heading{
 }
 .copyright{
 	clear:both;
-	margin:0;
-	padding:0;
 	font-size:12px;
-	white-space:pre;
-	text-align:center;
-	margin:0;
 	color:grb(51,51,51);
-	line-height:23px;
-	height:100px;
+	white-space:pre;
+	line-height:20px;
+	height:85px;
+	text-align:center;
 }
