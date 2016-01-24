@@ -1,0 +1,149 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>online talking</title>
+	<style type="text/css">
+	
+	html,body,div{
+		margin:0px;
+		padding:0px;
+	}
+	
+	body{
+		font-size:14px;
+		font-family:微软雅黑;
+		padding:0px;
+		text-align:center;
+		margin:0;
+		background-image:url(background.jpg);
+	}
+	.msgTime{
+		color:slategray;
+		font-size:12px;
+	}
+	li{
+		padding:4px;
+		background-color: hello;
+		
+	}
+	#send{
+		height:150px;
+		width:98px;
+		color:white;
+		font-family:Arial Narrow Regular;
+		font-size:18px;
+		border:none;
+		padding:0;
+		background:gray;
+			float:right;
+	}
+	#sendMsgContent{
+		height:150px;
+		width:610px;
+		padding:0px 0 0 10px;
+		border:none;
+		margin:0;
+		float:left;
+	}
+	h1{
+		margin:40px auto auto auto;
+		font-size:70px;
+		color:white;
+		font-family:Arial Narrow Regular;
+	}
+	p{
+		font-size:22px;
+		color:white;
+		font-family:Arial Narrow Regular;
+	}
+	#msgList{
+		border:1px solid black;
+		height:470px;
+		width:700px;
+		margin:30px auto 5px auto;
+		list-style-type:none;
+		padding-right:0px;
+		text-align:left;
+		padding-left:10px;
+		background:white;
+		border:none;
+	}
+	.container
+	{
+	
+		height: 100%;
+	}
+	
+	#chatroom{
+		width:710px;
+		margin:0px auto;
+	}
+	</style>
+	<script type='text/javascript'>
+	
+		var user={}
+		
+		user.name='yangting';
+		user.profiler='';
+	
+	
+		function sendMessage(){
+			//1 :content
+			
+			var content=document.querySelector("#sendMsgContent").value;//html ;div
+			
+			//2 create the message in content 
+			var msgContent=document.querySelector('#msgList');
+			var msgTime=getNowFormatDate();
+			
+			
+			//使用dom来创建html
+			var msgItem=document.createElement('li');
+			
+			var msgTemplate='<div class="msgTime">'+user.name+'	' +msgTime+'</div>';
+			msgTemplate+='<div class="msgContent">'+content+'</div>';
+			
+			msgItem.innerHTML=msgTemplate;
+			
+			msgContent.appendChild(msgItem);	
+			document.querySelector("#sendMsgContent").value="";			
+		}
+		function getNowFormatDate() {
+			var date = new Date();
+			var seperator1 = "-";
+			var seperator2 = ":";
+			var month = date.getMonth() + 1;
+			var strDate = date.getDate();
+			if (month >= 1 && month <= 9) {
+				month = "0" + month;
+			}
+			if (strDate >= 0 && strDate <= 9) {
+				strDate = "0" + strDate;
+			}
+			var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+					+ " " + date.getHours() + seperator2 + date.getMinutes()
+					+ seperator2 + date.getSeconds();
+			return currentdate;
+} 
+			
+	</script>
+	
+</head>
+<body>
+	<div id='container'>
+		
+		<div id='chatroom'>
+			<h1 >chat room</h1>
+			<p>enjoy talking with you</p>
+			<ul id="msgList" ></ul>
+			<div>
+				<input type="text" id='sendMsgContent' name="input" >
+				<input type="button" onclick='sendMessage()' id="send" value="Send" >
+			</div>
+		</div>
+	
+	</div>
+
+</body>
+</html>
+

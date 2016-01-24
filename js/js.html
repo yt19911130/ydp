@@ -10,22 +10,18 @@
 	</div>
 	<img src="img(1).jpg" style="height:300px;width:400px;margin-top:20px;margin-bottom:20px;">
 	<br/>
-	<input id="change" type="button" value="上一张">
+	<input id="change" type="button" value="上一张" onclick="backward()" >
 	<script>
-	var cha=document.getElementById('change')
-	var imgs=document.getElementsByTagName('image')
-	var j=0;
-	cha.onclick=function(){
-	j+=1;
-	if(j>=4){j=1;}
-	for(var i=0;i<imgs.length;i++)
-	{
-	k=i+j;
-	imgs[i].src="img("+ k +").jpg"
-	}
-	}
-
+		var a=document.getElementByTagName(img);
+		document.write("ni");
+		function backward(){
+			
+		}
+	
+	  
+	
 	</script>
 	<button>下一张</button>
 </body>
 </html>
+
