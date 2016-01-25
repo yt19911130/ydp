@@ -16,17 +16,20 @@
 		text-align:center;
 		margin:0;
 		background-image:url(background1.jpg);
-		
+		background-repeat:no-repeat;
+		background-position:center;
 	}
 	.msgTime{
 		color:white;
 		font-size:12px;
-		width:110px;
-		height:20px;
+		width:84px;
+		height:12px;
 		background:#999999;
 		text-align:center;
 		margin:0 auto;
 		padding-top:5px;
+		opacity:0.6;
+		padding-bottom:10px;
 	}
 	.username{
 		color:black;
@@ -37,11 +40,13 @@
 		font-size:14px;
 		font-family:微软雅黑;
 		letter-spacing:1px;
-		
+		margin:10px;
 	}
 	img.avatar{
 		width:40px;
 		height:40px;
+		float:left;
+		margin-right:10px;
 	}
 	li{
 		padding:4px;
@@ -58,7 +63,7 @@
 		padding:0;
 		background:#999999;
 		float:right;
-		
+		opacity:0.5;
 		
 	}
 	#sendMsgContent{
@@ -98,6 +103,7 @@
 		border:none;
 		padding-top:10px;
 		overflow:auto;
+	
 	}
 	.container
 	{
@@ -154,7 +160,7 @@
 			if (strDate >= 0 && strDate <= 9) {
 				strDate = "0" + strDate;
 			}
-			if (minute >= 0 && strDate <= 9) {
+			if (minute >= 0 && minute <= 9) {
 				minute = "0" + minute;
 			}
 			var currentdate =  month + seperator1 + strDate
