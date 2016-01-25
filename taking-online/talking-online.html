@@ -15,11 +15,33 @@
 		padding:0px;
 		text-align:center;
 		margin:0;
-		background-image:url(background.jpg);
+		background-image:url(background1.jpg);
+		
 	}
 	.msgTime{
-		color:slategray;
+		color:white;
 		font-size:12px;
+		width:110px;
+		height:20px;
+		background:#999999;
+		text-align:center;
+		margin:0 auto;
+		padding-top:5px;
+	}
+	.username{
+		color:black;
+		font-size:12px;
+		font-family:微软雅黑;
+	}
+	.msgContent{
+		font-size:14px;
+		font-family:微软雅黑;
+		letter-spacing:1px;
+		
+	}
+	img.avatar{
+		width:40px;
+		height:40px;
 	}
 	li{
 		padding:4px;
@@ -27,46 +49,55 @@
 		
 	}
 	#send{
-		height:150px;
-		width:98px;
+		height:125px;
+		width:90px;
 		color:white;
 		font-family:Arial Narrow Regular;
 		font-size:18px;
 		border:none;
 		padding:0;
-		background:gray;
-			float:right;
+		background:#999999;
+		float:right;
+		
+		
 	}
 	#sendMsgContent{
-		height:150px;
-		width:610px;
-		padding:0px 0 0 10px;
+		height:125px;
+		width:600px;
+		padding:5px 8px 0 10px;
 		border:none;
 		margin:0;
 		float:left;
-	}
+		overflow:auto;
+		maxlength:500;
+		font-size:14px;
+		font-family:微软雅黑;
+		letter-spacing:1px;
+	}	
 	h1{
-		margin:40px auto auto auto;
-		font-size:70px;
+		margin:30px auto auto auto;
+		font-size:62px;
 		color:white;
 		font-family:Arial Narrow Regular;
 	}
 	p{
-		font-size:22px;
+		font-size:20px;
 		color:white;
 		font-family:Arial Narrow Regular;
 	}
 	#msgList{
 		border:1px solid black;
-		height:470px;
-		width:700px;
-		margin:30px auto 5px auto;
+		height:425px;
+		width:684px;
+		margin:20px auto 5px auto;
 		list-style-type:none;
 		padding-right:0px;
 		text-align:left;
 		padding-left:10px;
 		background:white;
 		border:none;
+		padding-top:10px;
+		overflow:auto;
 	}
 	.container
 	{
@@ -75,18 +106,19 @@
 	}
 	
 	#chatroom{
-		width:710px;
+		width:694px;
 		margin:0px auto;
 	}
+	
 	</style>
 	<script type='text/javascript'>
 	
 		var user={}
 		
 		user.name='yangting';
-		user.profiler='';
-	
-	
+		user.avatar=new{};
+		user.avatar.src="me.jpg";
+
 		function sendMessage(){
 			//1 :content
 			
@@ -100,32 +132,35 @@
 			//使用dom来创建html
 			var msgItem=document.createElement('li');
 			
-			var msgTemplate='<div class="msgTime">'+user.name+'	' +msgTime+'</div>';
-			msgTemplate+='<div class="msgContent">'+content+'</div>';
+			var msgTemplate='<div class="msgTime">'+msgTime+'</div>';
+			msgTemplate+='<img class="avatar" src="'+user.avatar+'"/> +'<div class="msgContent">'+content+'</div>';
 			
 			msgItem.innerHTML=msgTemplate;
-			
 			msgContent.appendChild(msgItem);	
 			document.querySelector("#sendMsgContent").value="";			
 		}
-		function getNowFormatDate() {
+		function getNowFormatDate() 
+		{
+
 			var date = new Date();
 			var seperator1 = "-";
 			var seperator2 = ":";
 			var month = date.getMonth() + 1;
 			var strDate = date.getDate();
+			var minute=date.getMinutes();
 			if (month >= 1 && month <= 9) {
 				month = "0" + month;
 			}
 			if (strDate >= 0 && strDate <= 9) {
 				strDate = "0" + strDate;
 			}
-			var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
-					+ " " + date.getHours() + seperator2 + date.getMinutes()
-					+ seperator2 + date.getSeconds();
+			if (minute >= 0 && strDate <= 9) {
+				minute = "0" + minute;
+			}
+			var currentdate =  month + seperator1 + strDate
+					+ " " + date.getHours() + seperator2 + minute;
 			return currentdate;
-} 
-			
+		}
 	</script>
 	
 </head>
@@ -137,7 +172,7 @@
 			<p>enjoy talking with you</p>
 			<ul id="msgList" ></ul>
 			<div>
-				<input type="text" id='sendMsgContent' name="input" >
+				<textarea cols="6"  type="text" id='sendMsgContent' name="input" ></textarea>
 				<input type="button" onclick='sendMessage()' id="send" value="Send" >
 			</div>
 		</div>
