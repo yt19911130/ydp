@@ -2,7 +2,6 @@
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
 	<title>online talking</title>
-	<meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″>;
 	<style type="text/css">
 	
 	html,body,div{
@@ -44,13 +43,11 @@
 		letter-spacing:1px;
 		background:rgb(178,226,129);
 		min-height:24px;
-		width:adjust;
-		margin-left:50px;
+		max-width:450px;
 		text-align:left;
 		padding:8px 15px 8px 10px;
-		lint-height:5px;
-		
-		
+		display:inline-block;
+		word-break:break-all;
 	}
 	img.avatar{
 		width:40px;
@@ -63,8 +60,8 @@
 		
 	}
 	#send{
-		height:125px;
-		width:90px;
+		height:135px;
+		width:85px;
 		color:white;
 		font-family:Arial Narrow Regular;
 		font-size:18px;
@@ -76,8 +73,8 @@
 		
 	}
 	#sendMsgContent{
-		height:125px;
-		width:600px;
+		height:135px;
+		width:571px;
 		padding:5px 8px 0 10px;
 		border:none;
 		margin:0;
@@ -87,25 +84,26 @@
 		font-size:14px;
 		font-family:微软雅黑;
 		letter-spacing:1px;
+		word-break:break-all;
 	}	
 	h1{
-		margin:15px auto auto auto;
-		font-size:62px;
+		margin:30px auto auto auto;
+		font-size:60px;
 		color:white;
 		font-family:Arial Narrow Regular;
 		
 	}
 	p{
-		font-size:20px;
+		font-size:16px;
 		color:white;
 		font-family:Arial Narrow Regular;
-		
+		margin-top:0px;
 	}
 	#msgList{
 		border:1px solid black;
-		height:425px;
-		width:684px;
-		margin:0px auto 5px auto;
+		height:420px;
+		width:650px;
+		margin:28px auto 5px auto;
 		list-style-type:none;
 		padding-right:0px;
 		text-align:left;
@@ -122,7 +120,7 @@
 	}
 	
 	#chatroom{
-		width:694px;
+		width:660px;
 		margin:0px auto;
 	}
 	
@@ -183,7 +181,6 @@
 </head>
 <body>
 	<div id='container'>
-		
 		<div id='chatroom'>
 			<h1 >chat room</h1>
 			<p>enjoy talking with you</p>
