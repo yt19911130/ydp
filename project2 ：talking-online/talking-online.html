@@ -42,10 +42,10 @@
 		font-family:微软雅黑;
 		letter-spacing:1px;
 		background:rgb(178,226,129);
-		min-height:24px;
+		min-height:23px;
 		max-width:450px;
 		text-align:left;
-		padding:8px 15px 8px 10px;
+		padding:9px 15px 8px 10px;
 		display:inline-block;
 		word-break:break-all;
 	}
@@ -60,27 +60,24 @@
 		
 	}
 	#send{
-		height:135px;
-		width:85px;
+		height:30px;
+		width:62px;
 		color:white;
 		font-family:Arial Narrow Regular;
-		font-size:18px;
+		font-size:16px;
 		border:none;
 		padding:0;
 		background:#999999;
+		opacity:0.7;
 		float:right;
-		opacity:0.5;
-		
+		margin:5px 12px 0px 0px;
 	}
 	#sendMsgContent{
-		height:135px;
-		width:571px;
-		padding:5px 8px 0 10px;
+		height:130px;
+		width:630px;
 		border:none;
-		margin:0;
-		float:left;
+		padding:5px 8px 0 10px;
 		overflow:auto;
-		maxlength:500;
 		font-size:14px;
 		font-family:微软雅黑;
 		letter-spacing:1px;
@@ -97,13 +94,13 @@
 		font-size:16px;
 		color:white;
 		font-family:Arial Narrow Regular;
-		margin-top:0px;
+		margin-top:5px;
 	}
 	#msgList{
 		border:1px solid black;
-		height:420px;
-		width:650px;
-		margin:28px auto 5px auto;
+		height:400px;
+		width:630px;
+		margin:20px auto 5px auto;
 		list-style-type:none;
 		padding-right:0px;
 		text-align:left;
@@ -120,8 +117,22 @@
 	}
 	
 	#chatroom{
-		width:660px;
+		width:640px;
 		margin:0px auto;
+	}
+	#expression{
+		
+		background:url(tubiao.png);
+		border:0;
+		width:30px;
+		height:30px;
+		padding:0;
+	}
+	#sendsection{
+		background:white;
+		margin:0;
+		padding:0;
+		
 	}
 	
 	</style>
@@ -184,10 +195,12 @@
 		<div id='chatroom'>
 			<h1 >chat room</h1>
 			<p>enjoy talking with you</p>
-			<ul id="msgList" ></ul>
-			<div>
-				<textarea cols="6"  type="text" id='sendMsgContent' name="input" ></textarea>
+			<ul id="msgList" >
+			</ul>
+			<div id="sendsection" >
+				<button onclick="expression()" id="expression"  ></button>
 				<input type="button" onclick='sendMessage()' id="send" value="Send" >
+				<textarea cols="6"  type="text" id='sendMsgContent' name="input" ></textarea>
 			</div>
 		</div>
 	
