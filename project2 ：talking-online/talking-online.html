@@ -110,7 +110,7 @@
 		border:none;
 		padding-top:0px;
 		overflow:auto;
-	
+		clear:both;
 	}
 	.container
 	{
@@ -137,7 +137,17 @@
 		padding:0;
 		
 	}
-	
+	#expression-box{
+		height:80px;
+		display:none;
+		border:1px solid #999999;
+		bottom:0px;
+		position:absolute;
+		top:-80px;
+		background-color:gray;
+		width:45%;
+		
+	}
 	</style>
 	<script type='text/javascript'>
 	
@@ -190,9 +200,21 @@
 					+ " " + date.getHours() + seperator2 + minute;
 			return currentdate;
 		}
-		function expression(){
-			alert(div 480*280)
-		
+		function expression()
+		{
+			var displayStatus=document.getElementById("expression-box").style.display;
+			if(displayStatus=="none"){
+				document.getElementById("expression-box").style.display="block";
+			}
+			else{
+				document.getElementById("expression-box").style.display="none";
+			}
+		}
+		function emoticon(){
+			var content=document.getElementById("sendMsgContent");
+			var emoticon=document.createElement("img");
+			img.setAttribute("id","newTmg");
+			img.src
 		}
 	</script>
 	
@@ -202,9 +224,15 @@
 		<div id='chatroom'>
 			<h1 >chat room</h1>
 			<p>enjoy talking with you</p>
-			<ul id="msgList" >
-			</ul>
-			<div id="sendsection" >
+			
+			<ul id="msgList"></ul>
+		
+			<div id="sendsection" style="position:relative">
+				<div id="expression-box">
+					<img src="1.gif" style="float:left;padding-left:10px;" onclick="emoticon()">
+					<img src="2.gif" style="float:left;padding-left:10px;" onclick="emoticon()">		
+				</div>
+
 				<button onclick="expression()" id="expression"  ></button>
 				<input type="button" onclick='sendMessage()' id="send" value="Send" >
 				<textarea cols="6"  type="text" id='sendMsgContent' name="input" ></textarea>
